@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="boton">boton</string>
+    <string name="Nombre_de_usuario">Nombre de Usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Repita_Contraseña">Repita Contraseña</string>
+    <string name="titulo_login">Titulo login</string>
+</resources>
