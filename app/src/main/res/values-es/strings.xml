@@ -5,4 +5,5 @@
     <string name="Contraseña">Contraseña</string>
     <string name="Repita_Contraseña">Repita Contraseña</string>
     <string name="titulo_login">Titulo login</string>
+    <string name="Bienvenido">Bienvenido</string>
 </resources>
