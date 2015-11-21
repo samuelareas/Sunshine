@@ -14,7 +14,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login);
         final EditText nombre_editText = (EditText) findViewById(R.id.nombre_login);
         final EditText contraseña_editText = (EditText) findViewById(R.id.contraseña_login);
         final EditText repite_contraseña = (EditText) findViewById(R.id.repetir_contraseña_login);
@@ -29,9 +29,9 @@ public class LoginActivity extends AppCompatActivity {
                 int result = validarDatos(nombre_string,contraseña_string,repitecontraseña_string);
 
                 if(result==1){
-                    Toast.makeText(LoginActivity.this, nombre_string, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Conectado con exito", Toast.LENGTH_SHORT).show();
+                    setContentView(R.layout.despues_login);
                 }else{
-
                     Toast.makeText(LoginActivity.this, getString(error_login),Toast.LENGTH_SHORT).show();
                 }
             }
