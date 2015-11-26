@@ -43,6 +43,7 @@
         android:background="@color/gris_edit"
         android:layout_marginTop="200dp"
         android:hint="@string/Nombre_de_usuario"
+        android:singleLine="true"
         android:gravity="center_vertical"
         android:layout_height="30dp" />
     <EditText

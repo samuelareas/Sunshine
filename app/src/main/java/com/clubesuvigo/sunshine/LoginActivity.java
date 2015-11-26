@@ -1,5 +1,6 @@
 package com.clubesuvigo.sunshine;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,7 +31,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(result==1){
                     Toast.makeText(LoginActivity.this, "Conectado con exito", Toast.LENGTH_SHORT).show();
-                    setContentView(R.layout.despues_login);
+                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    startActivity(intent);
                 }else{
                     Toast.makeText(LoginActivity.this, getString(error_login),Toast.LENGTH_SHORT).show();
                 }
